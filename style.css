@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+.container{
+    text-align: center;
+}
+#ramen-menu img{
+    height: 200px;
+    margin: 5px;
+}
+#ramen-detail{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#new-ramen{
+    text-align: start;
+    width: 600px;
+    margin: auto;
+}
+
+#new-ramen h2{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#new-ramen input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

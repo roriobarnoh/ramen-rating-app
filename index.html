@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="background-color: black; color: white; text-align: center">
+        Raman Rate
+      </h2>
+      <div id="ramen-menu">
+        <!-- <img src="images/gyukotsu.jpg" alt="" height="150px" />
+        <img src="images/kojiro.jpg" alt="" height="150px" />
+        <img src="images/naruto.jpg" alt="" height="150" />
+        <img src="images/nirvana.jpg" alt="" height="150px" />
+        <img src="images/shoyu.jpg" alt="" height="150px" /> -->
+      </div>
+      <div id="ramen-detail">
+        <div id="wrapper">
+            <img src="images/gyukotsu.jpg" alt="selected Ramen Image" height="200px">
+            <h2></h2>
+            <h3></h3>
+        </div>
+        <p class="rating"></p>
+        <p class="comment"></p>
+      </div>
+      
+
+        
+        <form id="new-ramen">
+        <h2>Add New Raman</h2>
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="restuarant">Restuarant:</label><br />
+          <input type="text" id="restuarant" name="restuarant"/><br/><br />
+          <label for="image">Image:</label><br/>
+          <input type="text" id="image" name="image"/><br/>
+          <label for="rating">Rating:</label><br/>
+          <input type="text" id="rating" name="rating"/><br />
+          <label for="comment">Comment:</label><br />
+          <input type="text" id="comment" name="comment"/><br/><br/>
+          <input type="submit" value="Submit"/>
+        </form>
+    
+    </div>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
