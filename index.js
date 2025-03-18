@@ -81,7 +81,7 @@ function addSubmitListener(){
         e.preventDefault();
 
         const newRamen = {
-            name: document.getElementById('name').value,
+            name: document.getElementById('fname').value,
             restuarant: document.getElementById('restuarant').value,
             image: document.getElementById('image').value,
             rating: document.getElementById('rating').value,
