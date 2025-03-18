@@ -19,11 +19,11 @@
         <img src="images/shoyu.jpg" alt="" height="150px" /> -->
       </div>
       <div id="ramen-detail">
-        <div id="wrapper">
-            <img src="images/gyukotsu.jpg" alt="selected Ramen Image" height="200px">
+        <article>
+            <img src="" alt="selected Ramen Image" height="200px">
             <h2></h2>
             <h3></h3>
-        </div>
+        </article>
         <p class="rating"></p>
         <p class="comment"></p>
       </div>
@@ -32,17 +32,23 @@
         
         <form id="new-ramen">
         <h2>Add New Raman</h2>
+
           <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
+          <input type="text" id="fname" name="fname" required/><br />
+
           <label for="restuarant">Restuarant:</label><br />
-          <input type="text" id="restuarant" name="restuarant"/><br/><br />
-          <label for="image">Image:</label><br/>
-          <input type="text" id="image" name="image"/><br/>
+          <input type="text" id="restuarant" name="restuarant" required/><br/>
+
+          <label for="image">Image URL:</label><br/>
+          <input type="text" id="image" name="image" required/><br/>
+
           <label for="rating">Rating:</label><br/>
-          <input type="text" id="rating" name="rating"/><br />
+          <input type="text" id="rating" name="rating" min="1" max="10" required/><br />
+
           <label for="comment">Comment:</label><br />
-          <input type="text" id="comment" name="comment"/><br/><br/>
-          <input type="submit" value="Submit"/>
+          <textarea id="comment" name="comment" required></textarea><br/>
+
+          <button type="submit">Submit</button>
         </form>
     
     </div>

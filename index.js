@@ -35,7 +35,19 @@ const ramens = [
         comment: "Classic soy sauce-based goodness." 
     },
  ];
+ window.addEventListener('DOMContentLoaded', ()=>{
+    const ramenImage = document.querySelector('#ramen-detail img');
+    const ramenName = document.querySelector('#ramen-detail h2');
+    const ramenRestuarant = document.querySelector('#ramen-detail h3');
+    const ramenRating = document.querySelector('.rating');
+    const ramenComment = document.querySelector('.comment');
 
+    ramenImage.src = './images/shoyu.jpg';
+    ramenName.textContent = 'Shoyu Ramen';
+    ramenRestuarant.textContent = 'Shoyu Delight';
+    ramenRating.textContent = 'Rating: 8.5/10';
+    ramenComment.textContent = 'Comment: Classic soy sauce-based goodness.'
+ })
 function displayRamens(){
     const menu = document.getElementById('ramen-menu');
     menu.innerHTML = '';
@@ -43,9 +55,10 @@ function displayRamens(){
         const img = document.createElement('img');
         img.src = ramen.image;
         img.alt = ramen.name;
+
         img.addEventListener('click', () => handleClick(ramen));
         menu.appendChild(img);
-    })
+    });
 }
 function handleClick(ramen){
     const detailImage = document.querySelector('#ramen-detail img');
@@ -73,7 +86,8 @@ function addSubmitListener(){
             image: document.getElementById('image').value,
             rating: document.getElementById('rating').value,
             comment: document.getElementById('comment').value,
-        }
+        };
+
         const img = document.createElement('img');
         img.src = newRamen.image;
         img.alt = newRamen.name;
